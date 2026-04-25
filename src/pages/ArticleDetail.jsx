@@ -35,11 +35,15 @@ export default function ArticleDetail() {
       </h1>
 
       <div className="relative w-full h-64 rounded-xl overflow-hidden">
-          <img
-            src={article.image}
-            alt={article.title}
-            className="w-full h-full object-cover"
-            loading="lazy"
+        <img
+          src={article.image || '/image.jpg'}
+          alt={article.title}
+          className="w-full h-full object-cover"
+            
+          loading="lazy"
+          onError={(e) => {
+            e.currentTarget.src = "/image.jpg";
+          }}
           />
       </div>
 
