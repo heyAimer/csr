@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Base reset */
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #e5e7eb; 
+  color: #111827;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Headings */
+h1,
+h2 {
+  font-weight: 600;
+  color: #111827; /* slightly darker for contrast */
+}
+
+h1 {
+  font-size: 80px;
+  letter-spacing: -1.5px;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  margin-bottom: 8px;
+
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+/* Paragraphs */
+p {
+  margin: 0;
+  color: #4b5563; /* softer text */
+  line-height: 1.6;
+}
